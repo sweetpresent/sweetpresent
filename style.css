@@ -1,0 +1,205 @@
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+html{
+    padding: 0;
+}
+body {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/2025-02-14\ 19.51.27\ 3.png) ;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+h1 {
+    font-size: 40px;
+    color: #d5006d;
+    margin: 0;
+    margin-left: 5%;
+}
+.image-container {
+    position: relative; /* Позволяет позиционировать дочерние элементы относительно этого элемента */
+    margin: auto;
+
+}
+
+.liner {
+    width: 100%; /* Убедитесь, что изображение занимает всю ширину контейнера */
+    margin: 0;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    transform: translate(-0%, -50%); /* Сдвиг для точного центрирования */
+    color: rgb(0, 0, 0); /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: auto;
+    width: 100%;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: none; /* Скрыть меню по умолчанию */
+    flex-direction: column; /* Вертикальное расположение элементов меню */
+    position: absolute; /* Позиционирование меню */
+    top: 60px; /* Отступ сверху */
+    left: 0; /* Выравнивание по левому краю */
+    background-color: white; /* Цвет фона меню */
+    width: 100%; /* Ширина меню */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для меню */
+    z-index: 1000; /* Убедитесь, что меню поверх других элементов */
+    transition: max-height 0.3s ease; /* Плавный переход для высоты */
+    max-height: 0; /* Начальная высота меню */
+    overflow: hidden; /* Скрыть переполнение */
+}
+
+.menu.active {
+    display: flex; /* Показать меню при активации */
+    max-height: 300px; /* Максимальная высота меню при открытии */
+}
+
+.menu li {
+    margin: 10px 0; /* Отступы между элементами меню */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #d5006d;
+    font-size: 18px;
+    padding: 10px; /* Отступы вокруг текста */
+    display: block; /* Занимает всю ширину */
+}
+
+.menu-icon {
+    display: none; /* Скрыть иконку меню по умолчанию */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+    cursor: pointer; /* Указатель при наведении на бургер */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #d5006d;
+    margin: 3px 0;
+}
+.kors{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2%;
+    border-radius: 12px;
+}
+.texts{
+    color:#593864;
+    font-size: 50px;
+    margin: 0;
+}
+.textz{
+    color:#8F5F9E;
+    font-size: 40px;
+    margin: 0; 
+    
+}
+
+.content-section {
+    
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.content-block {
+
+    width: 100%;
+    height: AUTO;
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.image-containers {
+    position: relative;
+    width: 207px;
+    height: 275px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 12px;
+}
+
+.image-containers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+}
+.content-text {
+    color:rgba(89, 56, 100, 1);
+    width: 60%;
+    font-size: 24px;
+}
+.but{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 12px;
+}
+.bat{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 74px;
+    background-color: rgba(189, 187, 187, 0.9);
+    color:#ffffff;
+    padding: 5px;
+    border-radius: 22px;
+    margin-bottom: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрыть меню на мобильных устройствах */
+    }
+    .menu-icon {
+        display: flex; /* Показать иконку меню на мобильных устройствах */
+    }
+    .kors{
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .texts{
+        font-size: 40px;
+    }
+    .textz{
+        font-size: 30px;
+    }
+}
